@@ -1,0 +1,17 @@
+                           FACE MASK DETECTION TOOL 
+what is the need ??
+in covid 19 we all have experienced the pandemic so at that there was a much need for a device like this it is late but not that much so here is this device which can detect whether the person is wearing mask or not also now days not only due to covid but due pollution also it is very useful 
+
+working 
+Automated video surveillance systems makes the computer vision to perform object identification, tracking, and classification. In public safety contexts, verifying mask compliance requires real-time processing with low latency. Standard object detection algorithms often face trade-offs between processing speed and accuracy.
+
+This implementation addresses these constraints by decoupling the pipeline into two discrete phases:
+
+Face Detection: Rapid spatial localization of facial regions within video frames using Haar Feature-based Cascade Classifiers.
+
+Mask Classification: Binary classification of localized face regions using a transfer learning model derived from MobileNetV2.
+
+By constraining the deep learning inference step strictly to cropped facial regions rather than full high-resolution frames, the system maintains efficient CPU utilization while preserving high classification accuracy.
+
+Real time detection 
+this tool detects the mask are worened or not at the real time also which makes it very important to be used at the medical or the health centres so that the medical staff is very careful and also the patient is fully safe 
