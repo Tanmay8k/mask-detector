@@ -21,7 +21,7 @@ def run_detector():
         if not cap.isOpened():
             print("Error: Could not open webcam stream.")
             return
-        print("Webcam active. Press 'q' on your keyboard to exit.")
+        print("Webcam active. Press 'escape key' on your keyboard to exit.")
         while True:
             ret, frame = cap.read()
             if not ret:
@@ -51,7 +51,7 @@ def run_detector():
                 cv2.putText(frame, label_text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.65, box_color, 2)
                 cv2.rectangle(frame, (x, y), (x + w, y + h), box_color, 2)
             cv2.imshow("Real-Time Fave Mask Detector", frame)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
+            if cv2.waitKey(1) & 0xFF == ord('esc'):
                 break
         cap.release()
         cv2.destroyAllWindows()
