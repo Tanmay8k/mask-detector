@@ -51,7 +51,7 @@ def run_detector():
                 cv2.putText(frame, label_text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.65, box_color, 2)
                 cv2.rectangle(frame, (x, y), (x + w, y + h), box_color, 2)
             cv2.imshow("Real-Time Fave Mask Detector", frame)
-            if cv2.waitKey(1) & 0xFF == ord('esc'):
+            if cv2.waitKey(1) & 0xFF == 27:
                 break
         cap.release()
         cv2.destroyAllWindows()
