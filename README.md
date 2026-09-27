@@ -24,10 +24,13 @@ Dependencies: tensorflow, opencv-python, numpy, pillow
 
 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/Face-Mask-Detection.git
-cd Face-Mask-Detection
+git clone https://github.com/Tanmay8k/mask-detector
+cd mask-detector
 ```
-
+NOTE: if python 3.12 is not installed:
+```bash
+py install 3.12
+```
 2. Set Up Virtual Environment (venv)
 
 Create a fresh virtual environment using Python 3.12:
