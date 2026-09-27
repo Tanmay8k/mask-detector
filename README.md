@@ -66,16 +66,6 @@ python -m pip install --upgrade pip
 pip install tensorflow "opencv-python<5.0.0" numpy pillow
 ```
 
-(Optional) Create or install from requirements.txt:
-
-# Install from requirements.txt
-```bash
-pip install -r requirements.txt
-```
-# Or export your environment requirements
-pip freeze > requirements.txt
-
-
 4. System Verification Commands
 
 Verify that your environment, packages, and Haar Cascades are correctly initialized before running the project:
